@@ -15,6 +15,7 @@ public class InterfazInicio extends javax.swing.JFrame {
      */
     public InterfazInicio() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -65,6 +66,11 @@ public class InterfazInicio extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(37, 217, 217));
         jButton1.setFont(new java.awt.Font("Tilt Warp", 0, 24)); // NOI18N
         jButton1.setText("Iniciar Seccion");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton1);
         jPanel2.add(filler1);
 
@@ -116,7 +122,7 @@ public class InterfazInicio extends javax.swing.JFrame {
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         jPanel4.add(jPanel9);
@@ -132,7 +138,7 @@ public class InterfazInicio extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         jPanel4.add(jPanel10);
@@ -148,7 +154,7 @@ public class InterfazInicio extends javax.swing.JFrame {
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         jPanel4.add(jPanel7);
@@ -164,7 +170,7 @@ public class InterfazInicio extends javax.swing.JFrame {
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         jPanel4.add(jPanel8);
@@ -185,7 +191,7 @@ public class InterfazInicio extends javax.swing.JFrame {
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         jPanel5.add(jPanel11);
@@ -201,7 +207,7 @@ public class InterfazInicio extends javax.swing.JFrame {
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         jPanel5.add(jPanel12);
@@ -217,7 +223,7 @@ public class InterfazInicio extends javax.swing.JFrame {
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         jPanel5.add(jPanel13);
@@ -233,7 +239,7 @@ public class InterfazInicio extends javax.swing.JFrame {
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         jPanel5.add(jPanel14);
@@ -256,7 +262,16 @@ public class InterfazInicio extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        new Intefaz_Registrar().setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        new Interfaz_InicioSeccion().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
